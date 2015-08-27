@@ -22,7 +22,7 @@ function parse(stdout) {
 }
 
 function mpstat(cb) {
-	exec("mpstat 255 2", function(err, stdout, stderr) {
+	exec("mpstat 30 2", function(err, stdout, stderr) {
 		if(err) {
 			cb(null, {})
 			return
